@@ -10,3 +10,16 @@ songs = [
   "Amos Lee - Keep It Loose, Keep It Tight"
 ]
 
+def help 
+  puts "I accept the following commands:
+- help : displays this help message
+- list : displays a list of songs you can play
+- play : lets you choose a song to play
+- exit : exits this program"
+end 
+
+def list (songs_array)
+  songs_array.each_with_index do |elem, index|
+    puts "#{index+1}. #{elem}"
+  end
+end
